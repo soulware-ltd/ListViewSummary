@@ -1,0 +1,31 @@
+{
+    "name": "Soulware/ListViewSummary",
+    "description": "SugarCRM install and uninstall script to modify or extend views with custom code.",
+    "version": "0.9.0",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.0", 
+        "Soulware/EditViewOnInstall": "0.9.0"
+    },
+    
+    "repositories": [
+       {
+        "type": "package",
+        "package": {
+            "name": "Soulware/EditViewOnInstall",
+            "version": "0.9.0",
+            "source": {
+                "url": "git@developer2:/var/git/SoulwareEditViewOnInstall",
+                "type": "git",
+                "reference": "master"
+            },
+            "autoload": {
+                "psr-0" : {
+                    "Soulware\\EditViewOnInstall" : "src"
+                }
+            }
+        }
+    }
+    ],
+    "minimum-stability":"dev"
+}
