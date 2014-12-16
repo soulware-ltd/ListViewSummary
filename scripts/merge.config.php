@@ -3,7 +3,7 @@ require_once(__DIR__ . '/../vendor/autoload.php');
 
 
     $merge_configs=array();   
-    $view_config= new Soulware\mergeConfig('application','view.list.php','include/MVC/View/views','ViewList','preDisplay','append','
+    $view_config= new Soulware\EditViewOnInstall\viewMergeConfig('application','view.list.php','include/MVC/View/views','ViewList','preDisplay','append','
                 //ListViewSummary
                 echo "<script type=\"text/javascript\" src=\"custom/themes/default/js/custom_summary_listview.js\"></script>";
                 $this->lv->actionsMenuExtraItems[] = $this->buildMyMenuItem();
@@ -11,7 +11,7 @@ require_once(__DIR__ . '/../vendor/autoload.php');
     
     $merge_configs[]=$view_config;
     
-    $view_config= new Soulware\mergeConfig('application','view.list.php','include/MVC/View/views','ViewList','buildMyMenuItem','prepend',
+    $view_config= new Soulware\EditViewOnInstall\viewMergeConfig('application','view.list.php','include/MVC/View/views','ViewList','buildMyMenuItem','prepend',
                 '//ListViewSummary
                 global $app_strings;
                 $html = "<a class=\"menuItem\" style=\"width: 150px;\" href=\"#\" onmouseover=\"hiliteItem(this,\"yes\");\"
@@ -30,7 +30,7 @@ require_once(__DIR__ . '/../vendor/autoload.php');
     
     $merge_configs[]=$view_config;
     
-    $view_config= new Soulware\mergeConfig('application','view.list.php','include/MVC/View/views','ViewList','preDisplay','listViewProcess','
+    $view_config= new Soulware\EditViewOnInstall\viewMergeConfig('application','view.list.php','include/MVC/View/views','ViewList','preDisplay','listViewProcess','
                 //ListViewSummary/n
                 $this->lv->setup($this->seed, \'custom/include/ListView/ListViewGeneric.tpl\', $this->where, $this->params);
                 //ListViewSummary');
