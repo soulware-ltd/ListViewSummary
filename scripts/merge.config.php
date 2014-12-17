@@ -1,6 +1,4 @@
 <?php
-require_once(__DIR__ . '/../vendor/autoload.php');
-
 
     $merge_configs=array();   
     $view_config= new Soulware\EditViewOnInstall\viewMergeConfig('application','view.list.php','include/MVC/View/views','ViewList','preDisplay','append','
