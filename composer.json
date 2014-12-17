@@ -5,25 +5,8 @@
     "type" : "library",
     "license": "MIT",
     "require": {
-        "php": ">=5.3.0"
-        
+        "php": ">=5.3.0",
+        "soulware/edit-view-on-install": "dev-master" 
     },
-    "require-dev" : {
-      "Soulware/EditViewOnInstall": "0.9.*"  
-    },
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name":"Soulware/EditViewOnInstall",
-                "version": "0.9.3",
-                "source": {
-                    "url": "git@developer2:/var/git/SoulwareEditViewOnInstall",
-                    "type": "git",
-                    "reference": "master"
-                }
-        }
-        }
-    ],
     "minimum-stability": "dev"
 }
