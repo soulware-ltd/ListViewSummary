@@ -1,5 +1,5 @@
 {
-    "name": "Soulware/ListViewSummary",
+    "name": "soulware/list-view-summary",
     "description": "SugarCRM install and uninstall script to modify or extend views with custom code.",
     "version": "0.9.1",
     "type" : "library",
