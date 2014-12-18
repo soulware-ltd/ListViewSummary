@@ -1,20 +1,11 @@
-Number Summary For ListView
-===
+#Number Summary For ListView
 
-Adds an option to LisView Mass Update to sum selected records' number types fields.
+Adds an option to ListView to summarize all the number type fields for the selected records.
 
-Warning! This version is not upgrade safe. This plugin overrides the include/MVC/View/view/view.list.php file, please be aware that any changes made to that file will be lost. After uninstall, you have to manually restore the original version of this file.
+**Warning!** This plugin is not upgrade safe. This plugin modifies the include/MVC/View/view/view.list.php file on install, it's highly recommended to make backup before install.
 
-Later releases will handle this issue.
+The package is uninstallable and removes all the modifications from any core files it changed on install.
 
-### License:
+##License
 
 Distributed under the MIT license.
-
-
-===
-
-Lista nézet oszlop összegzés 1.0
-===
-
-A Core fájlokból módosul a include/MVC/View/view/view.list.php
