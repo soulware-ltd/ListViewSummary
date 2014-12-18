@@ -4,10 +4,11 @@ function ajaxSummary() {
     var uid = document.MassUpdate.uid.value;
     var module = document.MassUpdate.module.value;
     var fields = listViewDataRow();
+    var all_select = document.MassUpdate.select_entire_list.value;
     var td_count = $('.list tr.pagination:first').next().next().children().length;
 
     $.ajax({
-        data: {'fields': fields},
+        data: {'fields': fields, 'select_entire_list': all_select},
         url: "index.php?entryPoint=sum&module=" + module + "&uid=" + uid + "&td_count=" + td_count,
         type: 'post',
         dataType: 'json',
@@ -20,6 +21,7 @@ function ajaxSummary() {
                 } else {
                     $('#summaryRows').html(result);
                 }
+                window.location.hash = "summaryRows";
             }
         }
 

@@ -3,6 +3,7 @@
 require_once('custom/include/summary.class.php');
 $questionSummary = new listViewSummaryNumber();
 $data['uids'] = explode(',', $_REQUEST['uid']);
+$data['select_entire_list'] = $_REQUEST['select_entire_list'];
 $html = '';
 if (isset($_REQUEST['fields'])) {
     $fields = $_REQUEST['fields'];

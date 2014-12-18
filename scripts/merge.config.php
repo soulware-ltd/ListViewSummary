@@ -12,7 +12,7 @@
     $view_config= new Soulware\EditViewOnInstall\viewMergeConfig('application','view.list.php','include/MVC/View/views','ViewList','buildMyMenuItem','prepend',
                 '//ListViewSummary
                 global $app_strings;
-                $html = "<a class=\"menuItem\" style=\"width: 150px;\" href=\"#\" onmouseover=\"hiliteItem(this,\"yes\");\"
+                $html = "<a class=\"menuItem\" style=\"width: 150px;\" href=\"#\" onmouseover=\"hiliteItem(this,\'yes\');\"
                 onmouseout=\"unhiliteItem(this);\" onclick=\"sugarListView.get_checks();
                 if(sugarListView.get_checks_count() &lt; 1) {
                 alert(\'{$app_strings[\'LBL_LISTVIEW_NO_SELECTED\']}\');
@@ -28,7 +28,7 @@
     
     $merge_configs[]=$view_config;
     
-    $view_config= new Soulware\EditViewOnInstall\viewMergeConfig('application','view.list.php','include/MVC/View/views','ViewList','preDisplay','listViewProcess','
+    $view_config= new Soulware\EditViewOnInstall\viewMergeConfig('application','view.list.php','include/MVC/View/views','ViewList','listViewProcess','replace','
                 //ListViewSummary/n
                 $this->lv->setup($this->seed, \'custom/include/ListView/ListViewGeneric.tpl\', $this->where, $this->params);
                 //ListViewSummary');
